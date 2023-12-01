@@ -5,7 +5,7 @@ const NUMBER_WORDS: [&str; 9] = ["one", "two", "three", "four", "five", "six", "
 
 fn main() {
 
-    let file = File::open("input.txt").expect("Cannot open file");
+    let file = File::open("input/input.txt").expect("Cannot open file");
     let reader = BufReader::new(file);
     let lines = reader.lines();
     let mut sum: u32 = 0;
